@@ -1,0 +1,373 @@
+@font-face {
+  font-family: "Oxygen";
+  src: url(./fonts/Oxygen-Regular.ttf);
+}
+@font-face {
+  font-family: "Oxygen";
+  src: url(./fonts/Oxygen-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Oxygen";
+  src: url(./fonts/Oxygen-Light.ttf);
+}
+
+body {
+  font-family: "Lora", serif;
+  background-color: #f7f7f7;
+  color: #fff;
+  font-size: 13px;
+}
+
+a {
+  color: #fff;
+}
+
+.none {
+  display: none;
+}
+
+.header {
+  background-image: url(/img/header-bg.jpg);
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-position: top, center;
+}
+
+.container {
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  margin-bottom: 131px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 0 40px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 181.818% */
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+
+  transition: color 0.3s ease-in;
+}
+.nav-link:hover {
+  color: #dd783f;
+}
+
+.header-content {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+.header-title {
+  color: #fff;
+  text-align: center;
+  font-family: "Oxygen";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 51px; /* 102% */
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.subtitle {
+  margin-bottom: 30px;
+
+  color: rgba(255, 255, 255, 0.63);
+  text-align: center;
+  font-family: Oxygen;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 117.647% */
+}
+.btn {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 12px 31px;
+
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 153.846% */
+
+  border-radius: 3px;
+  background: #dd783f;
+  transition: opacity 0.3s ease-in;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.main {
+  padding-top: 60px;
+}
+
+.desc {
+  margin-bottom: 50px;
+  background-color: #fff;
+}
+.desc-row {
+  padding: 22px 0;
+}
+.desc-ul {
+  display: flex;
+  justify-content: space-around;
+}
+.desc-ul li {
+  color: #768088;
+  text-align: center;
+  font-family: Lora;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+
+.main {
+  margin-bottom: 140px;
+}
+
+/* ++++++++++++++++++++++++ post ++++++++++++++++++++++++ */
+.posts {
+  color: #000;
+  margin-bottom: 70px;
+}
+.t {
+  flex: 1;
+}
+.title {
+  color: #2e2e2e;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 135% */
+  letter-spacing: 2px;
+
+  margin-bottom: 40px;
+}
+
+.posts-row {
+  display: flex;
+  justify-content: space-between;
+}
+.road {
+  position: relative;
+}
+.road-title {
+  position: absolute;
+  top: 157px;
+  left: 20px;
+
+  color: #fff;
+  font-family: Lora;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 111.111% */
+}
+.road-info {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Oxygen;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 178.571% */
+
+  top: 193px;
+  left: 20px;
+}
+.road-avatar {
+  position: absolute;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px; /* 291.667% */
+
+  bottom: 15px;
+  left: 20px;
+}
+.name {
+  display: inline-block;
+  margin-left: 10px;
+}
+.data {
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 35px; /* 291.667% */
+}
+.Adventure {
+  position: absolute;
+
+  top: 20px;
+  left: 20px;
+
+  color: #fff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px; /* 108.333% */
+  text-transform: uppercase;
+
+  border-radius: 2px;
+  background: #dd783f;
+
+  padding: 6px 9px;
+}
+
+/* +++++++++++++++++++++++++++recent++++++++++++++++++++ */
+
+.recent {
+  color: #000;
+}
+.recent__title {
+  text-align: center;
+  color: #2e2e2e;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px; /* 135% */
+  letter-spacing: 2px;
+
+  margin-bottom: 40px;
+}
+.recent-card-inner {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recent-card {
+  width: 300px;
+
+  background-color: #fff;
+}
+.recent-card-info-inner {
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 10px;
+}
+
+.recent-card-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 131%;
+  color: #101315;
+
+  padding-top: 12px;
+  margin-bottom: 12px;
+}
+
+.recent-card-text {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 146%;
+  color: #7a7a7a;
+
+  margin-bottom: 60px;
+}
+.recent-info-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid #efefef;
+}
+.recent-avatar-inner {
+  display: flex;
+  align-items: center;
+}
+.recent-avatar-name {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 318%;
+  color: #999;
+
+  margin-left: 8px;
+}
+.recent-data {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 292%;
+  color: #999;
+}
+
+/* +++++++++++++++footer++++++++++++++++++ */
+
+.footer {
+  background-image: url(./img/footer.png);
+  min-height: 378px;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  text-align: center;
+}
+.footer-title {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 120%;
+  text-align: center;
+  color: #efefef;
+  border-bottom: #dedede 1px solid;
+  width: 188px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.form {
+  margin-bottom: 77px;
+}
+.input {
+  width: 375px;
+  background-color: #fff;
+  height: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
+  color: #000;
+}
+.input::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #817f83;
+}
+.form-btn {
+  border-radius: 0 3px 3px 0;
+  width: 125px;
+  height: 50px;
+
+  background: rgba(255, 255, 255, 0.28);
+
+  font-weight: 400;
+  font-size: 14px;
+  color: #f8f8f8;
+}
+.footer-nav {
+  height: 90px;
+  background-color: #232f3877;
+  padding-top: 20px;
+}

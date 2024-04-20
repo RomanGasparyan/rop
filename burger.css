@@ -1,0 +1,40 @@
+.burger-menu {
+  position: relative;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  display: none;
+}
+
+.burger-menu::after {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  top: 7px;
+  left: 0;
+}
+.burger-menu::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  top: -7px;
+  left: 0;
+}
+.burger-menu.active {
+  background-color: transparent;
+  position: fixed;
+  top: 37px;
+  right: 25px;
+}
+.burger-menu.active::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+.burger-menu.active::after {
+  transform: rotate(-45deg);
+  top: 0;
+}

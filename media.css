@@ -1,0 +1,58 @@
+@media (max-width: 576px) {
+  .nav-list {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+
+    top: -100%;
+    opacity: 0;
+    z-index: 5;
+
+    transition: all 0.4s ease-in;
+  }
+
+  .nav-list--active {
+    top: 0;
+    opacity: 1;
+    transition: all 0.4s ease-in;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+  .burger-menu {
+    display: block;
+    top: 14px;
+    right: 7px;
+    z-index: 6;
+  }
+
+  .header-title {
+    font-size: 35px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 10px 25px;
+  }
+  .posts {
+  }
+  .posts-row {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .road {
+    margin: 0 auto;
+  }
+}
